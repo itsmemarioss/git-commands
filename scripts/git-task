@@ -1,0 +1,4 @@
+number=${1?param missing - from file.}
+git switch main
+git pull
+git switch -c "$GIT_COMMANDS_BRANCH_PREFIX-$number"
