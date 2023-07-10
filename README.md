@@ -10,6 +10,8 @@ On `~/.zshrc` or equivalent add:
 
 ```sh
 export GIT_COMMANDS_BRANCH_PREFIX="<PREFIX>"
+# override the default remote (orign)
+export GIT_COMMANDS_REMOTE="upstream"
 ```
 
 then source it
