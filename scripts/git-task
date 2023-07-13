@@ -1,6 +1,6 @@
 number=${1?param missing - from file.}
 upstream="${GIT_COMMANDS_REMOTE:-origin}"
-branch="${GIT_COMMANDS_BRANCH_PREFIX:-number}"
+branch="$GIT_COMMANDS_BRANCH_PREFIX-$number"
 
 git switch main
 git pull --no-tags
